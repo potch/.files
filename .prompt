@@ -1,0 +1,20 @@
+autoload add-zsh-hook promptinit
+promptinit
+
+setopt prompt_subst
+
+alias line_count="wc -l | tr -d ' '"
+
+#☃
+get_glyph() {
+  pglyph='%F{yellow}☢%f'
+  # pglyph='☃ '
+}
+
+add-zsh-hook precmd get_glyph
+
+PROMPT='%~ ${pglyph} > '
+
+RPROMPT='$(get_prompt)'
+
+setopt CORRECT

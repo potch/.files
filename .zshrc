@@ -11,7 +11,7 @@ set -o emacs
 # aliases
 if [[ -r ${HOME}/.alias ]]; then
   echo loading aliases
-  eval `awk '/^[^# ]/ {print "alias " $0}' ${HOME}/.aliasrc`
+  eval `awk '/^[^# ]/ {print "alias " $0}' ${HOME}/.alias`
 fi
 
 # prompt

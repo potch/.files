@@ -1,0 +1,15 @@
+l='ls -l'
+
+serve='python -m SimpleHTTPServer'
+
+..='cd ..'
+
+syncgh='git checkout gh-pages && git rebase master && git push origin gh-pages && git checkout master'
+
+g='git'
+gs='g status'
+gco='g checkout'
+gb='g branch'
+gl='g log'
+gd='g diff'
+

@@ -13,3 +13,5 @@ gb='g branch'
 gl='g log'
 gd='g diff'
 
+pac='sudo pacman'
+

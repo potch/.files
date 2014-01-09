@@ -16,7 +16,7 @@ fi
 
 # prompt
 if [[ -r ${HOME}/.prompt ]]; then
-  echo loading aliases
+  echo loading prompt
   source .prompt
 fi
 

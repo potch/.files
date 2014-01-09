@@ -9,9 +9,15 @@ export EDITOR="vim"
 set -o emacs
 
 # aliases
-if [[ -r ${HOME}/.aliasrc ]]; then
+if [[ -r ${HOME}/.alias ]]; then
   echo loading aliases
   eval `awk '/^[^# ]/ {print "alias " $0}' ${HOME}/.aliasrc`
+fi
+
+# prompt
+if [[ -r ${HOME}/.prompt ]]; then
+  echo loading aliases
+  source .prompt
 fi
 
 # sudo cd === bossmode
